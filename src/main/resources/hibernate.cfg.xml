@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/jpa-demo</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.wg.japdemo.domain2.AddressEntity"/>
+    <mapping class="com.wg.japdemo.domain2.GoodEntity"/>
+    <mapping class="com.wg.japdemo.domain2.OrdersEntity"/>
+    <mapping class="com.wg.japdemo.domain2.TBlogEntity"/>
+    <mapping class="com.wg.japdemo.domain2.TTagGoodEntity"/>
+    <mapping class="com.wg.japdemo.domain2.TagEntity"/>
+    <mapping class="com.wg.japdemo.domain2.UserEntity"/>
+    <mapping class="com.wg.japdemo.domain2.WalletEntity"/>
+    <mapping class="com.wg.japdemo.domain2.Address"/>
+    <mapping class="com.wg.japdemo.domain2.Good"/>
+    <mapping class="com.wg.japdemo.domain2.Orders"/>
+    <mapping class="com.wg.japdemo.domain2.TBlog"/>
+    <mapping class="com.wg.japdemo.domain2.TTagGood"/>
+    <mapping class="com.wg.japdemo.domain2.Tag"/>
+    <mapping class="com.wg.japdemo.domain2.User"/>
+    <mapping class="com.wg.japdemo.domain2.Wallet"/>
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
